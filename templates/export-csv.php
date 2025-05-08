@@ -56,6 +56,7 @@ $default_columns = array('id', 'name', 'sku', 'price', 'stock_quantity', 'catego
         <a href="<?php echo admin_url('admin.php?page=branddrive'); ?>" class="branddrive-back-button">
             <span class="dashicons dashicons-arrow-left-alt"></span>
             <?php _e('Back to dashboard', 'branddrive-woocommerce'); ?>
+            <?php _e('Back to dashboard', 'branddrive-woocommerce'); ?>
         </a>
     </div>
 
