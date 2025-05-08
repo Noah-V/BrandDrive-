@@ -59,18 +59,30 @@ function branddrive_woocommerce_activate() {
     $settings = get_option('branddrive_settings', array());
     if (empty($settings)) {
         update_option('branddrive_settings', array(
-            'enabled' => 'no',
+            'enabled' => 'yes', //changed this to yes to "enable" plugin on activation.
             'environment' => 'production',
             'plugin_key' => '',
             'debug_mode' => 'no'
         ));
     }
+
+    update_option('branddrive_settings', array(
+        'enabled' => 'yes',
+    ));
+
+
 }
 
 // Register deactivation hook
 register_deactivation_hook(__FILE__, 'branddrive_woocommerce_deactivate');
 function branddrive_woocommerce_deactivate() {
     // Clean up any temporary data if needed
+     update_option('branddrive_settings', array(
+            'enabled' => 'no',
+            'environment' => 'production',
+            'plugin_key' => '',
+            'debug_mode' => 'no'
+     ));
 }
 
 // Add settings link on plugin page

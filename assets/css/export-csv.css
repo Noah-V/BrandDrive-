@@ -1,0 +1,143 @@
+/* BrandDrive Export CSV Styles */
+
+.branddrive-export-csv {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.branddrive-back-link {
+    margin-bottom: 20px;
+}
+
+.branddrive-back-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0052ff;
+    font-weight: 500;
+}
+
+.branddrive-back-button .dashicons {
+    margin-right: 5px;
+}
+
+.branddrive-page-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Tag Input Styles */
+.branddrive-tag-input-container {
+    position: relative;
+    border: 1px solid #e7e8ea;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #fff;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 4px;
+}
+
+.branddrive-tag-input-container:focus-within {
+    border-color: #0052ff;
+    box-shadow: 0 0 0 1px #0052ff;
+}
+
+.branddrive-selected-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.branddrive-tag {
+    background-color: #f0f2f5;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.branddrive-tag-remove {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.branddrive-tag-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 4px;
+    min-width: 100px;
+    background: transparent;
+}
+
+.branddrive-tag-suggestions {
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #e7e8ea;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 4px;
+    display: none;
+}
+
+.branddrive-tag-suggestion {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.branddrive-tag-suggestion:hover {
+    background-color: #f0f2f5;
+}
+
+.branddrive-checkbox-field {
+    display: flex;
+    align-items: center;
+}
+
+.branddrive-checkbox-field input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Form Field Styles */
+.branddrive-form-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.branddrive-form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.branddrive-form-actions {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#branddrive_export_csv_progress {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#branddrive_export_csv_progress .spinner {
+    float: none;
+    margin-right: 10px;
+}

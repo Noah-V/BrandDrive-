@@ -13,7 +13,7 @@ class BrandDrive_Settings {
      */
     private $defaults = array(
         'enabled' => 'no',
-        'environment' => 'production',
+        'environment' => 'staging',
         'plugin_key' => '',
         'debug_mode' => 'no'
     );

@@ -1,3 +1,365 @@
+/*!* BrandDrive Admin Styles *!*/
+
+/*!* Layout *!*/
+/*.branddrive-admin {*/
+/*  display: flex;*/
+/*  min-height: calc(100vh - 32px);*/
+/*  margin: 0 -20px;*/
+/*  background-color: #f4f5f9;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",*/
+/*  sans-serif;*/
+/*}*/
+
+/*.branddrive-sidebar {*/
+/*  width: 240px;*/
+/*  background-color: #12141c;*/
+/*  padding-top: 20px;*/
+/*}*/
+
+/*.branddrive-content {*/
+/*  flex: 1;*/
+/*  padding: 24px 32px;*/
+/*}*/
+
+/*!* Plugin Sidebar *!*/
+/*.branddrive-sidebar-item {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  padding: 12px 16px;*/
+/*  color: #ffffff;*/
+/*  text-decoration: none;*/
+/*  font-size: 14px;*/
+/*  transition: background-color 0.2s;*/
+/*  gap: 12px;*/
+/*  height: 40px;*/
+/*}*/
+
+/*.branddrive-sidebar-item:hover,*/
+/*.branddrive-sidebar-item.active {*/
+/*  background-color: rgba(255, 255, 255, 0.1);*/
+/*}*/
+
+/*.branddrive-sidebar-item .dashicons,*/
+/*.branddrive-menu-icon {*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  min-width: 20px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.branddrive-menu-icon {*/
+/*  background-color: #0a5fff;*/
+/*  border-radius: 4px;*/
+/*  padding: 4px;*/
+/*}*/
+
+/*.branddrive-menu-icon svg {*/
+/*  width: 12px;*/
+/*  height: 12px;*/
+/*}*/
+
+/*!* Back Link *!*/
+/*.branddrive-back-link {*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  color: #0062ff;*/
+/*  text-decoration: none;*/
+/*  font-size: 14px;*/
+/*  margin-bottom: 24px;*/
+/*}*/
+
+/*.branddrive-back-link .dashicons {*/
+/*  margin-right: 8px;*/
+/*}*/
+
+/*!* Logo *!*/
+/*.branddrive-logo-container {*/
+/*  margin-bottom: 24px;*/
+/*}*/
+
+/*.branddrive-logo {*/
+/*  height: 40px;*/
+/*  width: auto;*/
+/*}*/
+
+/*!* Cards *!*/
+/*.branddrive-card {*/
+/*  background-color: #ffffff;*/
+/*  border-radius: 12px;*/
+/*  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);*/
+/*  padding: 24px;*/
+/*  margin-bottom: 24px;*/
+/*}*/
+
+/*.branddrive-card-title {*/
+/*  font-size: 18px;*/
+/*  font-weight: 600;*/
+/*  color: #12141c;*/
+/*  margin: 0 0 24px 0;*/
+/*}*/
+
+/*.branddrive-card-description {*/
+/*  font-size: 14px;*/
+/*  color: #667085;*/
+/*  margin: 0 0 24px 0;*/
+/*  line-height: 1.5;*/
+/*}*/
+
+/*!* Form Elements *!*/
+/*.branddrive-form-field {*/
+/*  margin-bottom: 24px;*/
+/*}*/
+
+/*.branddrive-form-field label {*/
+/*  display: block;*/
+/*  font-size: 14px;*/
+/*  font-weight: 500;*/
+/*  color: #12141c;*/
+/*  margin-bottom: 8px;*/
+/*}*/
+
+/*.branddrive-select-wrapper {*/
+/*  position: relative;*/
+/*}*/
+
+/*.branddrive-select-wrapper::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  right: 16px;*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%);*/
+/*  width: 10px;*/
+/*  height: 6px;*/
+/*  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23667085' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*.branddrive-select,*/
+/*.branddrive-form-field input[type="text"] {*/
+/*  width: 100%;*/
+/*  padding: 10px 16px;*/
+/*  font-size: 14px;*/
+/*  border: 1px solid #e7e8ea;*/
+/*  border-radius: 8px;*/
+/*  background-color: #ffffff;*/
+/*  color: #12141c;*/
+/*  appearance: none;*/
+/*}*/
+
+/*.branddrive-select {*/
+/*  padding-right: 40px;*/
+/*}*/
+
+/*.branddrive-plugin-key-field {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  margin-bottom: 16px;*/
+/*}*/
+
+/*.branddrive-plugin-key-field input {*/
+/*  flex: 1;*/
+/*  margin-right: 8px;*/
+/*}*/
+
+/*!* Buttons *!*/
+/*.branddrive-button {*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  padding: 10px 20px;*/
+/*  font-size: 14px;*/
+/*  font-weight: 500;*/
+/*  border-radius: 8px;*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*  transition: background-color 0.2s;*/
+/*}*/
+
+/*.branddrive-button-primary {*/
+/*  background-color: #0062ff;*/
+/*  color: #ffffff;*/
+/*}*/
+
+/*.branddrive-button-primary:hover {*/
+/*  background-color: #0052d9;*/
+/*}*/
+
+/*.branddrive-button-secondary {*/
+/*  background-color: #ffffff;*/
+/*  color: #12141c;*/
+/*  border: 1px solid #e7e8ea;*/
+/*}*/
+
+/*.branddrive-button-secondary:hover {*/
+/*  background-color: #f4f5f9;*/
+/*}*/
+
+/*.branddrive-icon-button {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  width: 36px;*/
+/*  height: 36px;*/
+/*  padding: 0;*/
+/*  background: transparent;*/
+/*  border: 1px solid #e7e8ea;*/
+/*  border-radius: 8px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.branddrive-icon-button:hover {*/
+/*  background-color: #f4f5f9;*/
+/*}*/
+
+/*!* Help Text *!*/
+/*.branddrive-help-text {*/
+/*  font-size: 14px;*/
+/*  color: #667085;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.branddrive-link {*/
+/*  color: #0062ff;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.branddrive-link:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
+
+/*!* Table *!*/
+/*.branddrive-table-controls {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: 16px;*/
+/*}*/
+
+/*.branddrive-bulk-actions {*/
+/*  display: flex;*/
+/*  gap: 8px;*/
+/*}*/
+
+/*.branddrive-table-container {*/
+/*  background-color: #ffffff;*/
+/*  border-radius: 12px;*/
+/*  overflow: hidden;*/
+/*  margin-bottom: 24px;*/
+/*}*/
+
+/*.branddrive-table {*/
+/*  width: 100%;*/
+/*  border-collapse: collapse;*/
+/*}*/
+
+/*.branddrive-table th,*/
+/*.branddrive-table td {*/
+/*  padding: 12px 16px;*/
+/*  text-align: left;*/
+/*  font-size: 14px;*/
+/*  border-bottom: 1px solid #e7e8ea;*/
+/*}*/
+
+/*.branddrive-table th {*/
+/*  background-color: #f8f9fa;*/
+/*  font-weight: 500;*/
+/*  color: #12141c;*/
+/*}*/
+
+/*.branddrive-table tbody tr:hover {*/
+/*  background-color: #f4f5f9;*/
+/*}*/
+
+/*.branddrive-status-badge {*/
+/*  display: inline-flex;*/
+/*  padding: 2px 8px;*/
+/*  border-radius: 16px;*/
+/*  font-size: 12px;*/
+/*  font-weight: 500;*/
+/*}*/
+
+/*.branddrive-status-badge.status-completed {*/
+/*  background-color: #ecfdf3;*/
+/*  color: #027a48;*/
+/*}*/
+
+/*.branddrive-status-badge.status-on-hold {*/
+/*  background-color: #fff4ed;*/
+/*  color: #c4320a;*/
+/*}*/
+
+/*.actions-column {*/
+/*  text-align: right;*/
+/*  white-space: nowrap;*/
+/*}*/
+
+/*.actions-column .branddrive-link {*/
+/*  margin-left: 16px;*/
+/*}*/
+
+/*!* Table Footer *!*/
+/*.branddrive-table-footer {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*  padding: 16px 0;*/
+/*}*/
+
+/*.branddrive-per-page {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  gap: 8px;*/
+/*  font-size: 14px;*/
+/*  color: #667085;*/
+/*}*/
+
+/*.branddrive-pagination {*/
+/*  display: flex;*/
+/*  gap: 4px;*/
+/*}*/
+
+/*!* Notifications *!*/
+/*.branddrive-notification {*/
+/*  position: fixed;*/
+/*  top: 32px;*/
+/*  right: 16px;*/
+/*  padding: 12px 16px;*/
+/*  background-color: #12141c;*/
+/*  color: #ffffff;*/
+/*  border-radius: 8px;*/
+/*  font-size: 14px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  gap: 8px;*/
+/*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*  z-index: 9999;*/
+/*}*/
+
+/*.branddrive-notification .close {*/
+/*  cursor: pointer;*/
+/*  opacity: 0.7;*/
+/*}*/
+
+/*.branddrive-notification .close:hover {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*!* WordPress Admin Menu Icon *!*/
+/*#adminmenu .toplevel_page_branddrive .wp-menu-image {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  opacity: 1;*/
+/*}*/
+
+/*#adminmenu .toplevel_page_branddrive .wp-menu-image img {*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  padding: 0;*/
+/*  opacity: 1;*/
+/*}*/
+
 /* BrandDrive Admin Styles */
 
 /* Layout */
@@ -21,7 +383,7 @@
   padding: 24px 32px;
 }
 
-/* Sidebar */
+/* Plugin Sidebar */
 .branddrive-sidebar-item {
   display: flex;
   align-items: center;
@@ -30,7 +392,8 @@
   text-decoration: none;
   font-size: 14px;
   transition: background-color 0.2s;
-  line-height: 20px; /* Match icon height */
+  gap: 12px;
+  height: 40px;
 }
 
 .branddrive-sidebar-item:hover,
@@ -42,10 +405,21 @@
 .branddrive-menu-icon {
   width: 20px;
   height: 20px;
-  margin-right: 12px;
-  vertical-align: middle;
-  display: inline-flex;
+  min-width: 20px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.branddrive-menu-icon {
+  background-color: #0a5fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.branddrive-menu-icon svg {
+  width: 12px;
+  height: 12px;
 }
 
 /* Back Link */
@@ -146,9 +520,64 @@
   margin-bottom: 16px;
 }
 
-.branddrive-plugin-key-field input {
+.branddrive-plugin-key-input {
   flex: 1;
+  display: flex;
+  align-items: center;
   margin-right: 8px;
+  border: 1px solid #e7e8ea;
+  border-radius: 8px;
+  transition: all .2s;
+}
+
+.branddrive-plugin-key-input.focus {
+  border-color: #2271b1;
+  /*box-shadow: 0 0 0 1px #2271b1;*/
+  /*outline: 1px solid #2271b1;*/
+}
+
+.branddrive-plugin-key-input input {
+  border: none !important;
+  padding-right: 8px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  /*background-color: #9575cd !important;*/
+}
+
+#branddrive_verify_key {
+  padding: 14px 20px;
+}
+
+/* Add spinner styles */
+.branddrive-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  border: 2px solid #ffffff55;
+  /*border-left-color: #0052ff;*/
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  vertical-align: middle;
+  animation: branddrive-spin 1s linear infinite;
+}
+
+@keyframes branddrive-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.branddrive-form-actions {
+  margin-top: 20px;
+}
+
+#branddrive_key_verification_result {
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /* Buttons */
@@ -163,6 +592,16 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+.branddrive-button:disabled {
+  cursor: not-allowed;
+  background-color: #6295e3;
+}
+
+.branddrive-button:disabled:hover {
+  cursor: not-allowed;
+  background-color: #6295e3;
 }
 
 .branddrive-button-primary {
@@ -188,17 +627,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   width: 36px;
   height: 36px;
   padding: 0;
   background: transparent;
-  border: 1px solid #e7e8ea;
+  border: none;
   border-radius: 8px;
+  /*border: 1px solid #e7e8ea;*/
+  /*border-radius: 8px;*/
   cursor: pointer;
 }
 
 .branddrive-icon-button:hover {
   background-color: #f4f5f9;
+}
+
+.branddrive-icon-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.branddrive-yes-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 12px;
+  font-size: 24px;
+  color: #51AF33;
 }
 
 /* Help Text */
@@ -324,25 +781,44 @@
   z-index: 9999;
 }
 
+.branddrive-notification.success {
+  background-color: #ecfdf3;
+  color: #027a48;
+  border-left: 4px solid #027a48;
+}
+
+.branddrive-notification.error {
+  background-color: #fff4ed;
+  color: #c4320a;
+  border-left: 4px solid #c4320a;
+}
+
 .branddrive-notification .close {
   cursor: pointer;
   opacity: 0.7;
+  color: inherit;
 }
 
 .branddrive-notification .close:hover {
   opacity: 1;
 }
 
-/* Ensure proper icon alignment in WordPress admin menu */
+/* WordPress Admin Menu Icon */
 #adminmenu .toplevel_page_branddrive .wp-menu-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
 }
 
 #adminmenu .toplevel_page_branddrive .wp-menu-image img {
   width: 20px;
   height: 20px;
   padding: 0;
+  opacity: 1;
+}
+
+.override-hover-text-white {
+  color: #fff !important;
 }
 

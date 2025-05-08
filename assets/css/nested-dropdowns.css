@@ -1,0 +1,287 @@
+/**
+ * BrandDrive Nested Dropdowns Styles
+ */
+
+/* Main dropdown styles */
+.branddrive-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.branddrive-dropdown-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.branddrive-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 140px;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 110;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 4px;
+    padding: 8px;
+}
+
+/* Filter option styles */
+.filter-option {
+    position: relative;
+    color: #1a2b4b;
+    height: 38.2px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+.filter-option:last-child {
+    margin-bottom: 0;
+}
+
+.filter-option:hover,
+.filter-option.active {
+    background-color: #edf5ff;
+}
+
+.filter-option-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.filter-option-arrow {
+    margin-left: 0;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.filter-arrow {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.filter-option-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Improve styling for the Previous date subdropdown and currency filters */
+
+/* Improve checkbox and radio styling */
+.filter-option-checkbox,
+.filter-option-radio {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    min-height: 38.2px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.filter-option-checkbox input[type="checkbox"],
+.filter-option-radio input[type="radio"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+.filter-option-checkbox label,
+.filter-option-radio label {
+    font-size: 14px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Currency filter specific styling */
+.filter-option-checkbox[data-filter="currency"] {
+    font-weight: 500;
+}
+
+/* Sub-dropdown styles */
+.branddrive-nested-dropdown {
+    position: fixed;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    z-index: 120;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    padding: 8px;
+}
+
+/* Overlay styles */
+.dropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    display: none;
+}
+
+/* Subdropdown overlay */
+.subdropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 115;
+    display: none;
+}
+
+/* Custom Date Range Styles */
+.custom-date-range {
+    padding: 12px 16px;
+    background-color: #f9fafb;
+    border-top: 1px solid #f3f4f6;
+    border-bottom: 1px solid #f3f4f6;
+    margin: 8px 0;
+}
+
+.date-range-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.date-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.date-input-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.date-input {
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.date-input:focus {
+    border-color: #0052ff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 82, 255, 0.1);
+}
+
+/* Add styles for the clear all filters button */
+.branddrive-active-filters-container {
+    margin-top: 12px;
+    position: relative;
+}
+
+.branddrive-filters-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.branddrive-clear-all-filters {
+    display: none;
+}
+
+.branddrive-clear-filters-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}
+
+.branddrive-clear-filters-button:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.clear-filters-icon {
+    color: #6b7280;
+}
+
+.branddrive-clear-filters-button:hover .clear-filters-icon {
+    color: #4b5563;
+}
+
+/* Active filters styling */
+.branddrive-active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
+.branddrive-filter-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #edf5ff;
+    color: #0a5fff;
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.filter-remove {
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
